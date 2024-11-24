@@ -1,0 +1,299 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1286,1614" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Text" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="Lines">
+        <Variable.Default>
+          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new list(of string)" />
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ReadTextFile File="{x:Null}" Content="[Text]" DisplayName="Read Text File" FileName="Synonym.txt" sap:VirtualizedContainerService.HintSize="638,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_2" />
+    <Assign sap:VirtualizedContainerService.HintSize="638,114" sap2010:WorkflowViewState.IdRef="Assign_3">
+      <Assign.To>
+        <OutArgument x:TypeArguments="scg:List(x:String)">[Lines]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="scg:List(x:String)">[Split(Text, Environment.NewLine).ToList]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <uix:NApplicationCard AttachMode="SingleWindow" DisplayName="Use Browser Chrome: Synonyms and Antonyms of Words | Thesaurus.com" sap:VirtualizedContainerService.HintSize="638,1365" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="IfNotOpen" ScopeGuid="6bb82e01-c200-45df-9638-2cc0e65b1623" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="604,1125" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each line" sap:VirtualizedContainerService.HintSize="570,1065" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[Lines]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="line" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="536,926" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="scg:List(x:String)" Name="Words">
+                        <Variable.Default>
+                          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new list(of string)" />
+                        </Variable.Default>
+                      </Variable>
+                      <Variable x:TypeArguments="scg:List(x:String)" Name="LineWords">
+                        <Variable.Default>
+                          <VisualBasicValue x:TypeArguments="scg:List(x:String)" ExpressionText="new list(of string)" />
+                        </Variable.Default>
+                      </Variable>
+                      <Variable x:TypeArguments="x:String" Name="LineSynonym" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="502,114" sap2010:WorkflowViewState.IdRef="Assign_4">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="scg:List(x:String)">[Words]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="scg:List(x:String)">[Words.Concat(line.Split(" ")).ToList]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each word" sap:VirtualizedContainerService.HintSize="502,482" sap2010:WorkflowViewState.IdRef="ForEach`1_4" Values="[Words]">
+                      <ui:ForEach.Body>
+                        <ActivityAction x:TypeArguments="x:String">
+                          <ActivityAction.Argument>
+                            <DelegateInArgument x:TypeArguments="x:String" Name="word" />
+                          </ActivityAction.Argument>
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="468,336" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="wordSynonym" />
+                            </Sequence.Variables>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="type the word to be synonymed" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="6bb82e01-c200-45df-9638-2cc0e65b1623" Text="[word]" Version="V4">
+                              <uix:NTypeInto.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.powerthesaurus.org/synonyms" CVScreenId="0ecd6861-a0a9-4cc2-b863-61db648764df" CvElementArea="536, 152, 732, 45" CvType="InputBox" DesignTimeRectangle="541, 104, 676, 38" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='tr_pe ' placeholder='Search' aaname='' /&gt;" Guid="246d12a8-454e-4b48-ad9a-90b151ad0371" InformativeScreenshot="14ae74fa53c313364dd2a7c86b024dd7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SYNONYMS in Thesaurus: 100+ Synonyms &amp;amp; Antonyms for SYNONYMS' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CVScreenId="2c406e9d-b6dc-4850-a5be-24cf7eb946f7" CvTextArea="362, 113, 163, 21" CvTextArgument="power thesaurus" CvType="Text" DesignTimeRectangle="334, 111, 190, 24" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl tag='svg' type='' class='' aaname='' /&gt;" Guid="668fda7f-193b-4279-8faf-58b0e703d105" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NTypeInto.Target>
+                              <uix:NTypeInto.VerifyOptions>
+                                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                </uix:VerifyExecutionTypeIntoOptions>
+                              </uix:NTypeInto.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NTypeInto>
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click search icon" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="6bb82e01-c200-45df-9638-2cc0e65b1623" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.powerthesaurus.org/synonyms" DesignTimeRectangle="1233, 167, 16, 16" DesignTimeScaleFactor="1" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' tag='svg' class='' aaname='' /&gt;" Guid="43415669-b5e3-4f29-b7a2-53c0f3f65af7" InformativeScreenshot="9a87aba30a8a9ff89233ffe8c4f8059e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SYNONYMS in Thesaurus: 100+ Synonyms &amp;amp; Antonyms for SYNONYMS' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target CVScreenId="0ecd6861-a0a9-4cc2-b863-61db648764df" CvElementArea="1277, 162, 25, 23" CvType="Icon" DesignTimeRectangle="1274, 159, 32, 32" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='pt-ui-c-iffVLG pt-ui-c-iffVLG-phzXq-size-M pt-ui-c-iffVLG-kUiilW-variant-CTA pt-ui-c-iffVLG-dJHPaz-cv pt-ui-c-ibPCDO pt-ui-c-ibPCDO-bbFbnR-user-false' aaname='' /&gt;" Guid="794f1103-af95-4292-9ecc-55243f4f5a80" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB4SURBVFhH7ZcxCoAwEAR9hZ/2l1ax8wFCxCohOV0i5EhgDqZIczsc22RZtxBHYgaho3j3pM4a+UKelylJ2ZRagZACIcXcQn9mPy9z1xtNQs/y1ukq5AFCCkqtoEMKSq2g1AqEFAgpEFJkQnylTQwhz0vVWZT6mxBvjtNJtdMBlqQAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <uix:NGetText DisplayName="get word synonym" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="6bb82e01-c200-45df-9638-2cc0e65b1623" TextString="[wordSynonym]" Version="V4">
+                              <uix:NGetText.Target>
+                                <uix:TargetAnchorable BrowserURL="https://www.powerthesaurus.org/amidst/synonyms" CVScreenId="2c406e9d-b6dc-4850-a5be-24cf7eb946f7" DesignTimeRectangle="542, 292, 470, 48" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl id='primary-area' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='primary-area' tag='DIV' type='' class='rs_ru ' aaname='' /&gt;" Guid="ea4c3413-2f0e-4c57-9879-70556861cf72" ImageBase64="" InformativeScreenshot="5e12e2ac746656371eb4318c67279459.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Amidst synonyms - 740 Words and Phrases for Amidst' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                      <uix:Target DesignTimeRectangle="542, 243, 728, 48" FuzzySelectorArgument="&lt;webctrl class='ns_b' parentid='app' tag='DIV' type='' aaname='' /&gt;" Guid="e26655fa-8748-441b-82a9-0ba4152e03d0" SearchSteps="FuzzySelector" />
+                                      <uix:Target CVScreenId="2c406e9d-b6dc-4850-a5be-24cf7eb946f7" DesignTimeRectangle="334, 243, 192, 48" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aria-role='button' parentid='app' tag='DIV' type='' class='pt_pw pt_px' aaname='' check:innerText='Lists' /&gt;" Guid="c7964062-0210-40b5-a41b-3651915a5bac" SearchSteps="FuzzySelector" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NGetText.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NGetText>
+                            <Assign sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_5">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="scg:List(x:String)">[LineWords]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="scg:List(x:String)">[LineWords.Concat({wordSynonym}).tolist]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </ActivityAction>
+                      </ui:ForEach.Body>
+                    </ui:ForEach>
+                    <Assign sap:VirtualizedContainerService.HintSize="502,114" sap2010:WorkflowViewState.IdRef="Assign_6">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[LineSynonym]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[String.Join(" ", LineWords)]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <ui:AppendLine File="{x:Null}" DisplayName="Append Line" FileName="SynonymDone.txt" sap:VirtualizedContainerService.HintSize="502,156" sap2010:WorkflowViewState.IdRef="AppendLine_1" Text="[LineSynonym]" UseDefaultEncoding="False" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOiSURBVFhHzZfZT1NBFMZberugLIEoGJISl6ho2OKjPmAAN0rcooIVCAqCxBSURKkmREAoxIh/Ajzpm/IfiCCKyKKllK2sKpaYkkpQaBEYz7lMFdq7tBUSv+QXbtq5832dM/fcQeKSqm5JC6wI8CzoljWADt94gcF/H6AdyFmLsuJnDpPeoZUmv9JIk1sSd2SZwul0vgsmFAvgAQQgAWnviPRo87IspWWGSW3pZo61Pgm/2HMkuHhKTqf2TjChXwFkpzuJ8sRrN9rsqlNvGlWa9lg6vbhgQp8DqCrnCXO+h2zRvOVka3r7CJbIq70DE/oVIDTTSELOdPBz9r099FxnkWgImNDvAOEXukTotqsyey9TK27BhH4F2JZjJhGZH7zgo0V9dSCB2nkKJvQiwDJZx0MHibw2QKKyer0j29TI+3SAgWAAZfkckeumVim2OhR6uzGwauF5VP7QC3Wu2ajO7Z+Dv0SY/jl8RKnleoGJQIBl1hifd0lSc58k6aVWktq6HTcWgg1oZ96gdnfBcN+u64NEmKF6arleYCQaAM2x49FbPIQ1xhB7iyyEn5Euzo4JRsIBYNnZXy6iGN3YlYMlE84DujHCRYxu3LanbNpzM4KR4B7AmuOy0+G82q+fjoi9PWmMLZ0kXLDhyqxpdPhfgYlgANxwkXobQ4fzCsfE661NiXe/ED4S9FbPngAmwgHqlpp8CRB/f5rwwRlAcc8uGAAwBdb+8qoE0Q9me/aV2wgP3CVgCie02Fg4jF04AdFNqK6YzYqu+O4ECA/cmxDfWrAKtMtxBkBMIQbnIXqLh/C7yKofZoDwgasTYlgMo7esETxiTOGkWADEBGixHFhvBK/xs7AahzmsZoEIUr3wmDq6CQLg4UKkDC6wHCbcmAheB9UuOgAiiGFxJtjg5G7FGABbLXY8L1bBLyBsA+/LSHq8TStJaV1hj1jw4tmEEMNAHLXzFG5CPGAisuxBoqp2bmSAGSCDWnELTyx4vkNwFZj8MRrin1cCzW+IH8kggExrJkjApV42CJM3SvDk+w8hLECGNx2UbURoyORa2BK4guC14o7N15Lgr24A+GvuLgwgv/l5BXsBLr97GKZgvA0mfAR0UgN8FF2GeI2f4Xf1wGGf/zHBd4Gi9BuRl1hXj11Fn8ifMBgkb/Qp1hG7GBjEASeBDADfIRr8DL8TrTWf2ADQillgyd3DYAA6dHOEv0RZOc8ePhGPIMVf2RWgwzdIEslvgNAwFYWH0UAAAAAASUVORK5CYII=" InformativeScreenshot="ee51ef2aa3fa886efd72e9f1c2dfe54c.jpg" Selector="&lt;html app='chrome.exe' title='SYNONYMS in Thesaurus: 100+ Synonyms &amp;amp; Antonyms for SYNONYMS' /&gt;" Title="7 Synonyms &amp; Antonyms for GHOUL | Thesaurus.com" Url="https://www.powerthesaurus.org/synonyms" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
